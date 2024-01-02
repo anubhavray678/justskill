@@ -106,6 +106,8 @@ export default function MenuBar() {
                       C++ Fundamentals
                     </Link>
                   </Button>
+                </AccordionDetails>
+                <AccordionDetails>
                   <Button onClick={() => setOpen(false)}>
                     <Link
                       href="/cpp-fundamentals"
@@ -114,6 +116,8 @@ export default function MenuBar() {
                       Data Structures
                     </Link>
                   </Button>
+                </AccordionDetails>
+                <AccordionDetails>
                   <Button onClick={() => setOpen(false)}>
                     <Link
                       href="/cpp-fundamentals"

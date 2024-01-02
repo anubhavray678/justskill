@@ -30,12 +30,12 @@ export default function Footer() {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="" className="hover:underline">
-                    Read
+                    CodePad
                   </a>
                 </li>
                 <li>
                   <a href="" className="hover:underline">
-                    Practice
+                    JobList
                   </a>
                 </li>
               </ul>
@@ -80,7 +80,7 @@ export default function Footer() {
           </span>
           <div className=" flex justify-center mt-4 sm:justify-center sm:mt-0">
             <a
-              href="#"
+              href="https://t.me/JustForSkill"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <TelegramIcon />
@@ -98,7 +98,7 @@ export default function Footer() {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <EmailIcon />
-              <span className="sr-only">GitHub account</span>
+              <span className="sr-only">Support</span>
             </a>
           </div>
         </div>
