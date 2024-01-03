@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
 import Lottie from "lottie-react";
-import animationData from "../../public/a1.json";
-// import { Button } from "@/components/ui/button";
-
+import animationData from "../../public/a2.json";
+import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <main>

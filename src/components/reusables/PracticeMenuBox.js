@@ -85,7 +85,9 @@ export default function PracticeMenuBox() {
             <MenuItem>
               <Link href="/cpp-fundamentals">DSA Sheet</Link>
             </MenuItem>
-            <MenuItem>CodePad</MenuItem>
+            <MenuItem>
+              <Link href="/codeground">CodeGround</Link>
+            </MenuItem>
           </MenuList>
         </ClickAwayListener>
       </Popup>

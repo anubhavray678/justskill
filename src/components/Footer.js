@@ -29,14 +29,14 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
-                    CodePad
-                  </a>
+                  <Link href="/codeground" className="hover:underline">
+                    CodeGround
+                  </Link>
                 </li>
                 <li>
-                  <a href="" className="hover:underline">
+                  <Link href="justlist" className="hover:underline">
                     JobList
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

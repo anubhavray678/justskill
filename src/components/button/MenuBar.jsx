@@ -31,7 +31,7 @@ export default function MenuBar() {
       >
         <MenuRounded />
       </IconButton>
-      <Drawer open={open} onClose={() => setOpen(false)} size="lg" color="red">
+      <Drawer open={open} onClose={() => setOpen(false)} size="lg" color="">
         <Box
           sx={{
             display: "flex",
@@ -76,9 +76,15 @@ export default function MenuBar() {
             <a href="/">Home </a>
           </ListItemButton>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
-          <ListItemButton sx={{ fontWeight: 400, ml: 1.3 }}>
-            <a href="">Course </a>
-          </ListItemButton>
+
+          <Link href={"/course"}>
+            <ListItemButton
+              sx={{ fontWeight: 400, ml: 1.3 }}
+              onClick={() => setOpen(false)}
+            >
+              Course
+            </ListItemButton>
+          </Link>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
           <Link href={"/about"}>
             <ListItemButton
@@ -151,10 +157,10 @@ export default function MenuBar() {
                 <AccordionDetails>
                   <Button onClick={() => setOpen(false)}>
                     <Link
-                      href="/cpp-fundamentals"
+                      href="/codeground"
                       className="capitalize text-slate-800 hover:text-purple-500"
                     >
-                      CodePad
+                      CodeGround
                     </Link>
                   </Button>
                 </AccordionDetails>
