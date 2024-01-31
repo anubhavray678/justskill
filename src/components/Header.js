@@ -42,6 +42,12 @@ export default function Header() {
                 Contact
               </Link>
               <PracticeDropDown />
+              <Link
+                href={"https://study.justskills.in/"}
+                className="font-bold hover:text-purple-500"
+              >
+                Study
+              </Link>
             </nav>
           </div>
         </div>

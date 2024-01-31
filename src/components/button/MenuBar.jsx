@@ -178,6 +178,16 @@ export default function MenuBar() {
             </ListItemButton>
           </Link>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
+
+          <Link href={"https://study.justskills.in/"}>
+            <ListItemButton
+              sx={{ ml: 1.3, fontWeight: 400 }}
+              onClick={() => setOpen(false)}
+            >
+              Study
+            </ListItemButton>
+          </Link>
+          <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
         </List>
         <Box
           sx={{
