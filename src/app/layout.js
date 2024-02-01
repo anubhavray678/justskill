@@ -8,7 +8,7 @@ import SplashScreen from "@/components/SplashScreen";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import Script from "next/script";
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function RootLayout({ children }) {

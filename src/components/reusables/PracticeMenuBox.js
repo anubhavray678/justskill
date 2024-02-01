@@ -82,12 +82,13 @@ export default function PracticeMenuBox() {
               backgroundColor: "slate",
             }}
           >
-            <MenuItem>
-              <Link href="/cpp-fundamentals">DSA Sheet</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link href="/codeground">CodeGround</Link>
-            </MenuItem>
+            {" "}
+            <Link href="/dsa-questions">
+              <MenuItem>DSA Sheet</MenuItem>
+            </Link>
+            <Link href="/codeground">
+              <MenuItem>CodeGround</MenuItem>
+            </Link>
           </MenuList>
         </ClickAwayListener>
       </Popup>
