@@ -1,7 +1,8 @@
-"use client";
-import Lottie from "lottie-react";
-import animationData from "../../../public/a2.json";
+// "use client";
+
 import Typography from "@mui/material/Typography";
+import LotieFile from "./LottieFile";
+
 export const metadata = {
   title: "About Us | Justskills",
   description:
@@ -36,11 +37,7 @@ export default function About() {
                 src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt=""
               /> */}
-              <Lottie
-                animationData={animationData}
-                className="flex justify-center items-center "
-                loop={true}
-              />
+              <LotieFile />
             </div>
           </div>
         </div>
