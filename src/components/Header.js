@@ -45,6 +45,7 @@ export default function Header() {
               <Link
                 href={"https://study.justskills.in/"}
                 className="font-bold hover:text-purple-500"
+                target="blank"
               >
                 Study
               </Link>
