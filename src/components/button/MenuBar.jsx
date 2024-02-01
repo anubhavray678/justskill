@@ -147,7 +147,7 @@ export default function MenuBar() {
                 <AccordionDetails>
                   <Button onClick={() => setOpen(false)}>
                     <Link
-                      href="/cpp-fundamentals"
+                      href="/dsa-questions"
                       className="capitalize text-slate-800 hover:text-purple-500"
                     >
                       DSA Sheet
