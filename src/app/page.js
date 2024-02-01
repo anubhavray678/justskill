@@ -31,7 +31,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" w-[100%] relative h-[60vh] gap-10 md:w-[60%] md:h-[90vh]">
-            <Image src="/hero.gif" alt="" fill className=" p-5 rounded" />
+            <Image src="/hero.gif" alt="" fill className=" pt-8 rounded" />
           </div>
         </div>
       </section>
