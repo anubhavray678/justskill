@@ -2,7 +2,16 @@
 import Lottie from "lottie-react";
 import animationData from "../../../public/a2.json";
 import Typography from "@mui/material/Typography";
-
+export const metadata = {
+  title: "About Us | Justskills",
+  description:
+    "The aim of JustSkills is to make very high quality, easy-to-understand, not-so-boring text based courses (that revolve around Computer Science) available for learners for free. That's it.",
+  openGraph: {
+    title: "About Us | Justskills",
+    description:
+      "The aim of JustSkills is to make very high quality, easy-to-understand, not-so-boring text based courses (that revolve around Computer Science) available for learners for free. That's it.",
+  },
+};
 export default function About() {
   return (
     <main>
