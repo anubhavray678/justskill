@@ -1,14 +1,19 @@
 "use client";
-
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import animationData from "../../../public/a2.json";
 
-export default function LotieFile() {
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+
+export default function LottieFile() {
   return (
-    <Lottie
-      animationData={animationData}
-      className="flex justify-center items-center "
-      loop={true}
-    />
+    <>
+      {Lottie && (
+        <Lottie
+          animationData={animationData}
+          className="flex justify-center items-center"
+          loop={true}
+        />
+      )}
+    </>
   );
 }
