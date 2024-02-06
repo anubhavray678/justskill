@@ -77,9 +77,86 @@ export default function FeaturedSection() {
           <Image src="/hero.gif" alt="" fill className=" pt-8 rounded" />
         </div>
       </div>
-      <div id="myDiv" className=" h-[200px]">
-        <Element name="test1" className="element"></Element>
+      <div id="myDiv" className="pt-10 grid justify-around gap-32 lg:flex">
+        <div class=" rounded-xl select-none flex-col justify-center bg-indigo-500 bg-gradient-to-br ">
+          <div class="py-16 px-8 text-white ">
+            <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
+              Justskills
+            </span>
+            <p class="my-6 text-3xl font-semibold leading-10">
+              Increase reach with{" "}
+              <span class="whitespace-nowrap py-2 text-cyan-300">
+                drag and drop
+              </span>
+              .
+            </p>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+              necessitatibus nostrum repellendus ab totam.
+            </p>
+            <a
+              href="#"
+              class="font-semibold tracking-wide text-white underline underline-offset-4"
+            >
+              Learn More
+            </a>
+          </div>
+          <img className="p-10 rounded-lg object-cover" src="" />
+        </div>
+
+        <div class="rounded-xl select-none flex-col justify-center bg-indigo-500 bg-gradient-to-br ">
+          <div class="py-16 px-8 text-white ">
+            <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
+              Justskills
+            </span>
+            <p class="my-6 text-3xl font-semibold leading-10">
+              Increase reach with{" "}
+              <span class="whitespace-nowrap py-2 text-cyan-300">
+                drag and drop
+              </span>
+              .
+            </p>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+              necessitatibus nostrum repellendus ab totam.
+            </p>
+            <a
+              href="#"
+              class="font-semibold tracking-wide text-white underline underline-offset-4"
+            >
+              Learn More
+            </a>
+          </div>
+          <img className="p-10 rounded-lg object-cover" src="" />
+        </div>
+
+        <div class="rounded-xl select-none flex-col justify-center bg-indigo-500 bg-gradient-to-br ">
+          <div class="py-16 px-8 text-white ">
+            <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
+              Justskills
+            </span>
+            <p class="my-6 text-3xl font-semibold leading-10">
+              Increase reach with{" "}
+              <span class="whitespace-nowrap py-2 text-cyan-300">
+                drag and drop
+              </span>
+              .
+            </p>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+              necessitatibus nostrum repellendus ab totam.
+            </p>
+            <a
+              href="#"
+              class="font-semibold tracking-wide text-white underline underline-offset-4"
+            >
+              Learn More
+            </a>
+          </div>
+          <img className="p-10 rounded-lg object-cover" src="" />
+        </div>
       </div>
+      <Element name="test1" className="element"></Element>
     </section>
   );
 }
