@@ -10,7 +10,8 @@ import {
 } from "react-scroll";
 import Image from "next/image";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
-import Head from "./Head";
+import HeadTag from "./Head";
+import Head from "next/head";
 
 export default function Home() {
   useEffect(() => {
@@ -40,52 +41,56 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <Head />
-      <section className="">
-        <div className=" w-full justify-items-center md:flex justify-center md:justify-between">
-          <div className="w-[100%] md:w-[30%] relative z-50 justify-evenly flex flex-col">
-            <div>
-              <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
-                Creative,
-              </h1>
-              <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
-                Thoughts,
-              </h1>
-              <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
-                Age,
-              </h1>
-            </div>
-            <div className="">
-              <p className="font-bold text-2xl sm:text-4xl text-primary pt-10">
-                Improve then prove
-              </p>
+    <>
+      <Head>
+        <HeadTag />
+      </Head>
+      <main>
+        <section className="">
+          <div className=" w-full justify-items-center md:flex justify-center md:justify-between">
+            <div className="w-[100%] md:w-[30%] relative z-50 justify-evenly flex flex-col">
+              <div>
+                <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
+                  Creative,
+                </h1>
+                <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
+                  Thoughts,
+                </h1>
+                <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
+                  Age,
+                </h1>
+              </div>
               <div className="">
-                <Link
-                  activeClass="active"
-                  to="test1"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  onSetActive={handleSetActive}
-                >
-                  <Button className="mt-10 w-[50%] gap-2 p-6">
-                    Explore
-                    <KeyboardDoubleArrowDownIcon />
-                  </Button>{" "}
-                </Link>
+                <p className="font-bold text-2xl sm:text-4xl text-primary pt-10">
+                  Improve then prove
+                </p>
+                <div className="">
+                  <Link
+                    activeClass="active"
+                    to="test1"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onSetActive={handleSetActive}
+                  >
+                    <Button className="mt-10 w-[50%] gap-2 p-6">
+                      Explore
+                      <KeyboardDoubleArrowDownIcon />
+                    </Button>{" "}
+                  </Link>
+                </div>
               </div>
             </div>
+            <div className=" w-[100%] relative h-[60vh] gap-10 md:w-[60%] md:h-[90vh]">
+              <Image src="/hero.gif" alt="" fill className=" pt-8 rounded" />
+            </div>
           </div>
-          <div className=" w-[100%] relative h-[60vh] gap-10 md:w-[60%] md:h-[90vh]">
-            <Image src="/hero.gif" alt="" fill className=" pt-8 rounded" />
+          <div id="myDiv" className=" h-[200px]">
+            <Element name="test1" className="element"></Element>
           </div>
-        </div>
-        <div id="myDiv" className=" h-[200px]">
-          <Element name="test1" className="element"></Element>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }
