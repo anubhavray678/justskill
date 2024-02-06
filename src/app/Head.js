@@ -4,7 +4,6 @@ export default function Head() {
       <title>JustSkills | Improve then prove</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="JustSkills" />
-      {/* <meta name="theme-color" content="#fff" /> */}
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3581583340976914"

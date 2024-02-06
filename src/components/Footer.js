@@ -34,7 +34,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="justlist" className="hover:underline">
+                  <Link href="joblist" className="hover:underline">
                     JobList
                   </Link>
                 </li>

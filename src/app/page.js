@@ -10,6 +10,7 @@ import {
 } from "react-scroll";
 import Image from "next/image";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import Head from "./Head";
 
 export default function Home() {
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function Home() {
 
   return (
     <main>
+      <Head />
       <section className="">
         <div className=" w-full justify-items-center md:flex justify-center md:justify-between">
           <div className="w-[100%] md:w-[30%] relative z-50 justify-evenly flex flex-col">
