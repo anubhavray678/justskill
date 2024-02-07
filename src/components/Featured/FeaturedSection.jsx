@@ -208,7 +208,7 @@ export default function FeaturedSection() {
                 <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
                   Justskills Study
                 </span>
-                <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
+                <p class="my-6 text-2xl font-semibold leading-10 text-indigo-500 dark:text-white md:text-3xl">
                   Increase Knowledge with{" "}
                   <span class="whitespace-nowrap py-2 text-cyan-300">
                     Trending Tech materials
