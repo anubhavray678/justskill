@@ -213,7 +213,7 @@ export default function FeaturedSection() {
                 </span>
                 <p class="my-6 text-2xl font-semibold leading-10 text-indigo-500 dark:text-white md:text-3xl">
                   Increase Knowledge with{" "}
-                  <span class="whitespace-nowrap py-2 text-cyan-300">
+                  <span class="whitespace-nowrap py-2 text-cyan-300 text-sm sm:text-3xl">
                     Trending Tech materials
                   </span>
                   .

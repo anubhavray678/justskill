@@ -47,40 +47,40 @@ export default function Read() {
             Read
           </AccordionTrigger>
           <AccordionContent className="border-2 rounded-lg flex justify-between border-none ">
-            <div className="container w-full h-full bg-secondary rounded-lg p-5 md:hidden">
-              <div
-                class="rounded-xl select-none flex-col justify-center bg-indigo-100 
+            {/* <div className="container w-full h-full bg-secondary rounded-lg p-5 md:hidden"> */}
+            <div
+              class="rounded-xl select-none flex-col justify-center bg-indigo-100 
         dark:bg-indigo-500 border  w-full h-full"
-              >
-                <div class=" py-10 px-8 text-white ">
-                  <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
-                    Justskills Read
+            >
+              <div class=" py-10 px-8 text-white ">
+                <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
+                  Justskills Read
+                </span>
+                <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
+                  Increase Knowledge with{" "}
+                  <span class="whitespace-nowrap py-2 text-cyan-300 text-sm sm: text-sm">
+                    High-Quality Articles
                   </span>
-                  <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
-                    Increase Knowledge with{" "}
-                    <span class="whitespace-nowrap py-2 text-cyan-300">
-                      High-Quality Articles
-                    </span>
-                    .
-                  </p>
-                  <p class="mb-4 text-indigo-500 dark:text-white">
-                    For all avid readers, here&apos;s a carefully curated
-                    collection of articles designed to enhance your skills in
-                    Data Structures and Algorithms (DSA).Additionally,
-                    foundational concepts of programming languages are included
-                    to cater to absolute beginners.
-                  </p>
-                  <a
-                    href="/read"
-                    target="blank"
-                    class="font-semibold tracking-wide underline underline-offset-4 text-indigo-500 dark:text-white"
-                  >
-                    Learn More
-                  </a>
-                </div>
-                <img className="rounded-lg object-cover" src="/read.png" />
+                  .
+                </p>
+                <p class="mb-4 text-indigo-500 dark:text-white">
+                  For all avid readers, here&apos;s a carefully curated
+                  collection of articles designed to enhance your skills in Data
+                  Structures and Algorithms (DSA).Additionally, foundational
+                  concepts of programming languages are included to cater to
+                  absolute beginners.
+                </p>
+                <a
+                  href="/read"
+                  target="blank"
+                  class="font-semibold tracking-wide underline underline-offset-4 text-indigo-500 dark:text-white"
+                >
+                  Learn More
+                </a>
               </div>
+              <img className="rounded-lg object-cover" src="/read.png" />
             </div>
+            {/* </div> */}
           </AccordionContent>
         </AccordionItem>
       </Accordion>
