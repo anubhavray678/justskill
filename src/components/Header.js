@@ -30,7 +30,11 @@ export default function Header() {
 
           <div className="hidden lg:block">
             <nav className="flex items-center gap-8 text-slate-500 text-lg">
-              <Typography className="hover:text-purple-500">Courses</Typography>
+              <Link href={"/courses"} className="hover:text-purple-500">
+                <Typography className="hover:text-purple-500 cursor-pointer">
+                  Courses
+                </Typography>{" "}
+              </Link>
               <Dropdown />
               <Link href={"/about"} className="hover:text-purple-500">
                 About

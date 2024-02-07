@@ -5,12 +5,22 @@ export const metadata = {
   description:
     "JustSkills is one of the leading platforms to learn Computer Science skills. Master essential data structures and algorithms,read trending tech and expand your knowledge on different tech stuff.",
   url: "https://justskills.in/",
+  metadataBase: new URL("https://justskills.in/"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
+    },
+  },
+
   openGraph: {
     title: "JustSkills | Improve then prove.",
     description:
       "JustSkills is one of the leading platforms to learn Computer Science skills. Master essential data structures and algorithms,read trending tech and expand your knowledge on different tech stuff.",
     url: "https://justskills.in/",
-    image: "/logo.png",
+    metadataBase: new URL("https://justskills.in/"),
+    images: "/logo.png",
   },
 };
 export default function Home() {

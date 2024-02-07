@@ -30,5 +30,17 @@ export default function sitemap() {
       changeFrequency: "weekly",
       // priority: 0.5,
     },
+    {
+      url: "https://justskills.in/codeground",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      // priority: 0.5,
+    },
+    {
+      url: "https://justskills.in/joblist",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      // priority: 0.5,
+    },
   ];
 }

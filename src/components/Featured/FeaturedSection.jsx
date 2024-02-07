@@ -84,7 +84,7 @@ export default function FeaturedSection() {
           </h1>
           <Element name="test1" className="element"></Element>
 
-          <div id="myDiv" className="pt-10 grid justify-around gap-32 lg:flex">
+          <div id="myDiv" className="pt-10 grid justify-around gap-24 lg:flex">
             <div className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl p-2">
               <div
                 class="rounded-xl select-none flex-col justify-center bg-indigo-100 
@@ -130,18 +130,19 @@ export default function FeaturedSection() {
                     Justskills CodeGround
                   </span>
                   <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
-                    Increase Knowledge with{" "}
+                    Practice Coding with{" "}
                     <span class="whitespace-nowrap py-2 text-cyan-300">
-                      High-Quality Articles
+                      Dynamic-Code Compiler
                     </span>
                     .
                   </p>
                   <p class="mb-4 text-indigo-500 dark:text-white">
-                    For all avid readers, here&apos;s a carefully curated
-                    collection of articles designed to enhance your skills in
-                    Data Structures and Algorithms (DSA).Additionally,
-                    foundational concepts of programming languages are included
-                    to cater to absolute beginners.
+                    An online code editor that allows users to write, edit, and
+                    run code directly within their web browsers without the need
+                    for any specialized software or development environments.
+                    This editors typically provide features such as syntax
+                    highlighting, code autocompletion, and error checking to
+                    help developers write code more efficiently and accurately.
                   </p>
                   <a
                     href="/codeground"
@@ -167,17 +168,19 @@ export default function FeaturedSection() {
                   <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
                     Increase Knowledge with{" "}
                     <span class="whitespace-nowrap py-2 text-cyan-300">
-                      High-Quality Articles
+                      Quality DSA problems
                     </span>
                     .
                   </p>
                   <p class="mb-4 text-indigo-500 dark:text-white">
-                    For all avid readers, here&apos;s a carefully curated
-                    collection of articles designed to enhance your skills in
-                    Data Structures and Algorithms (DSA).Additionally,
-                    foundational concepts of programming languages are included
-                    to cater to absolute beginners.
+                    Here&apos;s an extensive compilation of DSA problems
+                    organized by topic and pattern, ideal for those feeling
+                    trapped in tutorial limbo. While it might not be a quick
+                    fix, it&apos;s a solid step forward. Let&apos;s dive in and
+                    break free! <br />
+                    Solve it.
                   </p>
+
                   <a
                     href="/dsa-questions"
                     target="blank"
@@ -193,7 +196,7 @@ export default function FeaturedSection() {
         </div>
       </section>
 
-      <section>
+      <section className=" pb-16">
         <div className=" text-center justify-center mt-10">
           <h1 className=" font-extrabold text-4xl pt-24 pb-10 md:text-6xl">
             What&apos;s Justskills Study?
@@ -221,6 +224,11 @@ export default function FeaturedSection() {
                   Structures and Algorithms (DSA).Additionally, foundational
                   concepts of programming languages are included to cater to
                   absolute beginners.
+                  <br />{" "}
+                  <span className=" font-sans font-bold ">
+                    Read on trending topics in technology, coding, web
+                    development, app development, interviews etc.
+                  </span>
                 </p>
                 <a
                   href="https://study.justskills.in/"

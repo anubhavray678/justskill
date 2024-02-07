@@ -77,7 +77,7 @@ export default function MenuBar() {
           </ListItemButton>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
 
-          <Link href={"/course"}>
+          <Link href={"/courses"}>
             <ListItemButton
               sx={{ fontWeight: 400, ml: 1.3 }}
               onClick={() => setOpen(false)}
