@@ -189,7 +189,7 @@ export default function MenuBar() {
           </Link>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
         </List>
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -207,7 +207,7 @@ export default function MenuBar() {
           >
             Sign In
           </ListItemButton>
-        </Box>
+        </Box> */}
       </Drawer>
     </React.Fragment>
   );

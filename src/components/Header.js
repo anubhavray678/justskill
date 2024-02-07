@@ -65,9 +65,9 @@ export default function Header() {
             {/* <Link href={"/account"}>Hello, </Link> */}
             {/* <LogoutButton /> */}
 
-            <Link href={"/login"} className="mt-2 hover:text-purple-500">
+            {/* <Link href={"/login"} className="mt-2 hover:text-purple-500">
               Sign In
-            </Link>
+            </Link> */}
             {/* <Link href={"/login"}>Create Account</Link> */}
           </nav>
         </div>

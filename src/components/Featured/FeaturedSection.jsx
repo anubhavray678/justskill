@@ -77,86 +77,119 @@ export default function FeaturedSection() {
           <Image src="/hero.gif" alt="" fill className=" pt-8 rounded" />
         </div>
       </div>
-      <div id="myDiv" className="pt-10 grid justify-around gap-32 lg:flex">
-        <div class=" rounded-xl select-none flex-col justify-center bg-indigo-500 bg-gradient-to-br ">
-          <div class="py-16 px-8 text-white ">
-            <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
-              Justskills
-            </span>
-            <p class="my-6 text-3xl font-semibold leading-10">
-              Increase reach with{" "}
-              <span class="whitespace-nowrap py-2 text-cyan-300">
-                drag and drop
-              </span>
-              .
-            </p>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-              necessitatibus nostrum repellendus ab totam.
-            </p>
-            <a
-              href="#"
-              class="font-semibold tracking-wide text-white underline underline-offset-4"
-            >
-              Learn More
-            </a>
-          </div>
-          <img className="p-10 rounded-lg object-cover" src="" />
-        </div>
+      <div className=" text-center justify-center mt-10">
+        <h1 className=" font-extrabold text-4xl pt-24 pb-10 md:text-6xl">
+          What&apos;s Justskills about?
+        </h1>
+        <Element name="test1" className="element"></Element>
 
-        <div class="rounded-xl select-none flex-col justify-center bg-indigo-500 bg-gradient-to-br ">
-          <div class="py-16 px-8 text-white ">
-            <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
-              Justskills
-            </span>
-            <p class="my-6 text-3xl font-semibold leading-10">
-              Increase reach with{" "}
-              <span class="whitespace-nowrap py-2 text-cyan-300">
-                drag and drop
-              </span>
-              .
-            </p>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-              necessitatibus nostrum repellendus ab totam.
-            </p>
-            <a
-              href="#"
-              class="font-semibold tracking-wide text-white underline underline-offset-4"
+        <div id="myDiv" className="pt-10 grid justify-around gap-32 lg:flex">
+          <div className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl p-2">
+            <div
+              class="rounded-xl select-none flex-col justify-center bg-indigo-100 
+        dark:bg-indigo-500 border  w-full h-full"
             >
-              Learn More
-            </a>
+              <div class=" py-10 px-8 text-white ">
+                <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
+                  Justskills Read
+                </span>
+                <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
+                  Increase Knowledge with{" "}
+                  <span class="whitespace-nowrap py-2 text-cyan-300">
+                    High-Quality Articles
+                  </span>
+                  .
+                </p>
+                <p class="mb-4 text-indigo-500 dark:text-white">
+                  For all avid readers, here&apos;s a carefully curated
+                  collection of articles designed to enhance your skills in Data
+                  Structures and Algorithms (DSA).Additionally, foundational
+                  concepts of programming languages are included to cater to
+                  absolute beginners.
+                </p>
+                <a
+                  href="/read"
+                  target="blank"
+                  class="font-semibold tracking-wide underline underline-offset-4 text-indigo-500 dark:text-white"
+                >
+                  Learn More
+                </a>
+              </div>
+              <img className="rounded-lg object-cover" src="/read.png" />
+            </div>
           </div>
-          <img className="p-10 rounded-lg object-cover" src="" />
-        </div>
 
-        <div class="rounded-xl select-none flex-col justify-center bg-indigo-500 bg-gradient-to-br ">
-          <div class="py-16 px-8 text-white ">
-            <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
-              Justskills
-            </span>
-            <p class="my-6 text-3xl font-semibold leading-10">
-              Increase reach with{" "}
-              <span class="whitespace-nowrap py-2 text-cyan-300">
-                drag and drop
-              </span>
-              .
-            </p>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-              necessitatibus nostrum repellendus ab totam.
-            </p>
-            <a
-              href="#"
-              class="font-semibold tracking-wide text-white underline underline-offset-4"
+          <div className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl p-2">
+            <div
+              class="rounded-xl select-none flex-col justify-center bg-indigo-100 
+        dark:bg-indigo-500 border  w-full h-full"
             >
-              Learn More
-            </a>
+              <div class=" py-10 px-8 text-white ">
+                <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
+                  Justskills CodeGround
+                </span>
+                <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
+                  Increase Knowledge with{" "}
+                  <span class="whitespace-nowrap py-2 text-cyan-300">
+                    High-Quality Articles
+                  </span>
+                  .
+                </p>
+                <p class="mb-4 text-indigo-500 dark:text-white">
+                  For all avid readers, here&apos;s a carefully curated
+                  collection of articles designed to enhance your skills in Data
+                  Structures and Algorithms (DSA).Additionally, foundational
+                  concepts of programming languages are included to cater to
+                  absolute beginners.
+                </p>
+                <a
+                  href="/read"
+                  target="blank"
+                  class="font-semibold tracking-wide underline underline-offset-4 text-indigo-500 dark:text-white"
+                >
+                  Learn More
+                </a>
+              </div>
+              <img className="rounded-lg object-cover" src="/compiler.png" />
+            </div>
           </div>
-          <img className="p-10 rounded-lg object-cover" src="" />
+
+          <div className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl p-2">
+            <div
+              class="rounded-xl select-none flex-col justify-center bg-indigo-100 
+        dark:bg-indigo-500 border  w-full h-full"
+            >
+              <div class=" py-10 px-8 text-white ">
+                <span class="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
+                  Justskills Interview
+                </span>
+                <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
+                  Increase Knowledge with{" "}
+                  <span class="whitespace-nowrap py-2 text-cyan-300">
+                    High-Quality Articles
+                  </span>
+                  .
+                </p>
+                <p class="mb-4 text-indigo-500 dark:text-white">
+                  For all avid readers, here&apos;s a carefully curated
+                  collection of articles designed to enhance your skills in Data
+                  Structures and Algorithms (DSA).Additionally, foundational
+                  concepts of programming languages are included to cater to
+                  absolute beginners.
+                </p>
+                <a
+                  href="/dsa-questions"
+                  target="blank"
+                  class="font-semibold tracking-wide underline underline-offset-4 text-indigo-500 dark:text-white"
+                >
+                  Learn More
+                </a>
+              </div>
+              <img className="rounded-lg object-cover" src="/interview.png" />
+            </div>
+          </div>
         </div>
       </div>
-      <Element name="test1" className="element"></Element>
     </section>
   );
 }
