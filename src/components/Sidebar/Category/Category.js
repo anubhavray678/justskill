@@ -4,7 +4,7 @@ import Input from "@/components/filter/Input";
 function Category({ handleChange }) {
   return (
     <div>
-      <h2 className="sidebar-title">Job Type</h2>
+      <h2 className="sidebar-title">Job Types</h2>
 
       <div>
         <label className="sidebar-label-container">

@@ -6,6 +6,7 @@ import products from "@/components/db/data";
 import Recommended from "@/components/Recommended/Recommended";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Card from "@/components/filter/Card";
+import AccordSidebar from "@/components/Sidebar/AccordSidebar";
 
 export default function JobList() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -66,10 +67,16 @@ export default function JobList() {
 
   return (
     <>
-      <Sidebar handleChange={handleChange} />
-      <Navigation query={query} handleInputChange={handleInputChange} />
-      {/* <Recommended handleClick={handleClick} /> */}
-      <Products result={result} />
+      <AccordSidebar handleChange={handleChange} />
+
+      <div>
+        <div className="hidden lg:flex">
+          <Sidebar handleChange={handleChange} />
+        </div>
+        <Navigation query={query} handleInputChange={handleInputChange} />
+        {/* <Recommended handleClick={handleClick} /> */}
+        <Products result={result} />
+      </div>
     </>
   );
 }
