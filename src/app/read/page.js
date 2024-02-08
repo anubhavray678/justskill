@@ -58,7 +58,7 @@ export default function Read() {
                 </span>
                 <p class="my-6 text-3xl font-semibold leading-10 text-indigo-500 dark:text-white">
                   Increase Knowledge with{" "}
-                  <span class="whitespace-nowrap py-2 text-cyan-300 text-sm sm: text-sm">
+                  <span class="whitespace-nowrap py-2 text-cyan-300 sm: text-lg">
                     High-Quality Articles
                   </span>
                   .
