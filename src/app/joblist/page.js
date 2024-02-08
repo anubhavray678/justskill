@@ -8,20 +8,20 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 import Card from "@/components/filter/Card";
 import AccordSidebar from "@/components/Sidebar/AccordSidebar";
 
-export const metadata = {
-  title:
-    "Justskills | Joblist - current job openings in tech companies across all domains",
-  description:
-    "The aim of JustSkills is to make very high quality, easy-to-understand, not-so-boring text based courses (that revolve around Computer Science) available for learners for free. That's it.",
-  openGraph: {
-    title:
-      "Justskills | Joblist - current job openings in tech companies across all domains",
-    description:
-      "The aim of JustSkills is to make very high quality, easy-to-understand, not-so-boring text based courses (that revolve around Computer Science) available for learners for free. That's it.",
-    metadataBase: new URL("https://justskills.in/"),
-    image: "/logo.png",
-  },
-};
+// export const metadata = {
+//   title:
+//     "Justskills | Joblist - current job openings in tech companies across all domains",
+//   description:
+//     "The aim of JustSkills is to make very high quality, easy-to-understand, not-so-boring text based courses (that revolve around Computer Science) available for learners for free. That's it.",
+//   openGraph: {
+//     title:
+//       "Justskills | Joblist - current job openings in tech companies across all domains",
+//     description:
+//       "The aim of JustSkills is to make very high quality, easy-to-understand, not-so-boring text based courses (that revolve around Computer Science) available for learners for free. That's it.",
+//     metadataBase: new URL("https://justskills.in/"),
+//     image: "/logo.png",
+//   },
+// };
 
 export default function JobList() {
   const [selectedCategory, setSelectedCategory] = useState(null);

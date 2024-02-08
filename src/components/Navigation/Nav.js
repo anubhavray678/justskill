@@ -6,7 +6,7 @@ const Nav = ({ handleInputChange, query, handleChange }) => {
   return (
     <div className="nav">
       <input
-        className="search-input"
+        className="search-input dark:text-indigo-700"
         type="text"
         onChange={handleInputChange}
         value={query}
