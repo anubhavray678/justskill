@@ -4,7 +4,7 @@ import Input from "@/components/filter/Input";
 function Category({ handleChange }) {
   return (
     <div>
-      <h2 className="sidebar-title">Category</h2>
+      <h2 className="sidebar-title">Job Type</h2>
 
       <div>
         <label className="sidebar-label-container">
@@ -13,28 +13,28 @@ function Category({ handleChange }) {
         </label>
         <Input
           handleChange={handleChange}
-          value="sneakers"
-          title="Sneakers"
+          value="intern"
+          title="intern"
           name="test"
         />
         <Input
           handleChange={handleChange}
-          value="flats"
-          title="Flats"
+          value="full-time"
+          title="full-time"
           name="test"
         />
         <Input
           handleChange={handleChange}
-          value="sandals"
-          title="Sandals"
+          value="remote"
+          title="remote"
           name="test"
         />
-        <Input
+        {/* <Input
           handleChange={handleChange}
           value="heels"
           title="Heels"
           name="test"
-        />
+        /> */}
       </div>
     </div>
   );

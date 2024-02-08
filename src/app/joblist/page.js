@@ -18,7 +18,8 @@ export default function JobList() {
   };
 
   const filteredItems = products.filter(
-    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    (product) =>
+      product.jobTitle.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
   // ----------- Radio Filtering -----------
@@ -42,25 +43,20 @@ export default function JobList() {
     // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title }) =>
-          category === selected ||
-          color === selected ||
-          company === selected ||
-          newPrice === selected ||
-          title === selected
+        ({ type, company, jobTitle }) =>
+          type === selected || company === selected || jobTitle === selected
       );
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+      ({ companyImg, jobTitle, company, type, jobLink }) => (
         <Card
           key={Math.random()}
-          img={img}
-          title={title}
-          star={star}
-          reviews={reviews}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
+          img={companyImg}
+          title={jobTitle}
+          company={company}
+          type={type}
+          jobLink={jobLink}
         />
       )
     );

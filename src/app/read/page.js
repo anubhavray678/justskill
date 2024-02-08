@@ -14,7 +14,8 @@ export const metadata = {
     title: "Justskills Read ",
     description:
       "Read articles on programming languages ,data structures and algorithms.",
-    metadataBase: new URL("https://justskills.in/"),
+    metadataBase: new URL("https://justskills.in/read"),
+    images: "/read.png",
   },
 };
 export default function Read() {

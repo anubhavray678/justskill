@@ -1,22 +1,28 @@
 import { BsFillBagFill } from "react-icons/bs";
-
-const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
+import Link from "next/link";
+const Card = ({ img, title, company, type, jobLink }) => {
   return (
     <>
-      <section className="card">
+      <section className="card rounded-lg hover:border-2 hover:border-violet-700">
         <img src={img} alt={title} className="card-img" />
-        <div className="card-details">
-          <h3 className="card-title">{title}</h3>
-          <section className="card-reviews">
-            {star} {star} {star} {star}
-            <span className="total-reviews">{reviews}</span>
-          </section>
-          <section className="card-price">
-            <div className="price">
-              <del>{prevPrice}</del> {newPrice}
-            </div>
-            <div className="bag">
-              <BsFillBagFill className="bag-icon" />
+        <div className=" text-center">
+          <h3 className=" font-extrabold">{title}</h3>
+          <div className="flex justify-between">
+            <h3 className="font-bold">{company}</h3>
+            <h3 className="font-bold">{type}</h3>
+          </div>
+
+          <section>
+            <div className="flex justify-center">
+              <Link
+                href={jobLink}
+                target="blank"
+                className="bg-primary rounded-lg text-white  w-full cursor-pointer hover:bg-violet-700"
+              >
+                <button className="bg-primary rounded-lg pl-2 text-white pr-2 pt-2 pb-2 w-full cursor-pointer hover:bg-violet-700">
+                  Apply
+                </button>
+              </Link>
             </div>
           </section>
         </div>
