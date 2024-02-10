@@ -3,6 +3,7 @@ import codeground from "../../../public/codeground.png";
 import htmlcssjs from "../../../public/htmlcssjs.png";
 import cpp from "../../../public/cpp.png";
 import python from "../../../public/python.png";
+import Link from "next/link";
 
 import {
   Card,
@@ -51,12 +52,14 @@ export default function CodeGround() {
             <p className="text-center">C++</p>
             <CardFooter></CardFooter>
           </Card>
-          <Card className="w-[250px] m-5 p-5">
-            <CardContent>
-              <Image src={python} width={"100%"} height={"100%"} alt="" />
-              <p className="text-center">Python</p>
-            </CardContent>
-          </Card>
+          <Link href={"/codeground/python"}>
+            <Card className="w-[250px] m-5 p-5">
+              <CardContent>
+                <Image src={python} width={"100%"} height={"100%"} alt="" />
+                <p className="text-center">Python</p>
+              </CardContent>
+            </Card>
+          </Link>
         </div>
       </div>
     </>
