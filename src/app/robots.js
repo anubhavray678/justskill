@@ -3,7 +3,7 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "https://study.justskills.in/write",
+      disallow: "",
     },
     sitemap: "https://justskills.in/sitemap.xml",
   };
