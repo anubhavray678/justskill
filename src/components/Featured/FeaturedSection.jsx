@@ -8,6 +8,16 @@ import {
   animateScroll as scroll,
   scrollSpy,
 } from "react-scroll";
+
+import {
+  CardMedia,
+  CardHeader,
+  Card,
+  CardActionArea,
+  CardContent,
+  Typography,
+} from "@mui/material";
+
 import Image from "next/image";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import FirstFeature from "./FirstFeature";
@@ -39,7 +49,7 @@ export default function FeaturedSection() {
 
   return (
     <>
-      <section>
+      <section className=" dark:bg-[#0c0b22] !w-full">
         <div className=" w-full justify-items-center md:flex justify-center md:justify-between">
           <div className="w-[100%] md:w-[30%] relative z-50 justify-evenly flex flex-col">
             <div>
@@ -76,7 +86,24 @@ export default function FeaturedSection() {
             </div>
           </div>
           <div className=" w-[100%] relative h-[60vh] gap-10 md:w-[60%] md:h-[90vh]">
-            <Image src="/hero.gif" alt="" fill className=" pt-8 rounded" />
+            <Image
+              src="/hero.gif"
+              alt=""
+              fill
+              className=" hidden dark:flex pt-8 rounded"
+            />
+
+            <div raised={true} className="dark:hidden">
+              {/* <CardActionArea className=" hover:bg-[#f4f3f4]"> */}
+              <CardMedia
+                component="video"
+                image={"/vid2.mp4"}
+                className="dark:hidden w-full h-[90vh]"
+                autoPlay
+                loop={true}
+              />
+              {/* </CardActionArea> */}
+            </div>
           </div>
         </div>
       </section>

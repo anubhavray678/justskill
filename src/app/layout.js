@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
                 disableTransitionOnChange
               >
                 <Header />
+
                 <div className="max-w-7xl mx-auto p-6 min-h-screen">
                   {children}
                 </div>
