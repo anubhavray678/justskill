@@ -95,13 +95,32 @@ export default function FeaturedSection() {
 
             <div raised={true} className="dark:hidden">
               {/* <CardActionArea className=" hover:bg-[#f4f3f4]"> */}
-              <CardMedia
+              <video
+                className="dark:hidden w-full h-[50vh] md:h-[90vh]"
+                width="320"
+                height="240"
+                muted
+                controls={false}
+                preload="auto"
+                autoPlay={true}
+                loop={true}
+              >
+                <source src="/vid2.mp4" type="video/mp4" />
+                <track
+                  src="/path/to/captions.vtt"
+                  kind="subtitles"
+                  srcLang="en"
+                  label="English"
+                />
+                Your browser does not support the video tag.
+              </video>
+              {/* <CardMedia
                 component="video"
                 image={"/vid2.mp4"}
                 className="dark:hidden w-full h-[90vh]"
                 autoPlay
                 loop={true}
-              />
+              /> */}
               {/* </CardActionArea> */}
             </div>
           </div>
