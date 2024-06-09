@@ -1,6 +1,7 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { ClipLoader } from "react-spinners";
 import {
   Link,
   Element,
@@ -9,27 +10,18 @@ import {
   scrollSpy,
 } from "react-scroll";
 
-import {
-  CardMedia,
-  CardHeader,
-  Card,
-  CardActionArea,
-  CardContent,
-  Typography,
-} from "@mui/material";
-
 import Image from "next/image";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import FirstFeature from "./FirstFeature";
 
 export default function FeaturedSection() {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   useEffect(() => {
-    // Registering the 'begin' event and logging it to the console when triggered.
     Events.scrollEvent.register("begin", (to, element) => {
       console.log("begin", to, element);
     });
 
-    // Registering the 'end' event and logging it to the console when triggered.
     Events.scrollEvent.register("end", (to, element) => {
       console.log("end", to, element);
     });
@@ -43,23 +35,28 @@ export default function FeaturedSection() {
       Events.scrollEvent.remove("end");
     };
   }, []);
+
   const handleSetActive = (to) => {
     console.log(to);
   };
 
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true);
+  };
+
   return (
     <>
-      <section className=" dark:bg-[#0c0b22] !w-full">
-        <div className=" w-full justify-items-center md:flex justify-center md:justify-between">
+      <section className="dark:bg-[#0c0b22] !w-full">
+        <div className="w-full justify-items-center md:flex justify-center md:justify-between">
           <div className="w-[100%] md:w-[30%] relative z-50 justify-evenly flex flex-col">
             <div>
-              <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
+              <h1 className="font-extrabold text-6xl sm:text-8xl text-primary">
                 Creative,
               </h1>
-              <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
+              <h1 className="font-extrabold text-6xl sm:text-8xl text-primary">
                 Thoughts,
               </h1>
-              <h1 className=" font-extrabold text-6xl sm:text-8xl text-primary">
+              <h1 className="font-extrabold text-6xl sm:text-8xl text-primary">
                 Age,
               </h1>
             </div>
@@ -69,8 +66,7 @@ export default function FeaturedSection() {
               </p>
               <div className="">
                 <Link
-                  activeclassName="active"
-                  to="test1"
+                  to="createAccount"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -85,18 +81,23 @@ export default function FeaturedSection() {
               </div>
             </div>
           </div>
-          <div className=" w-[100%] relative h-[60vh] gap-10 md:w-[60%] md:h-[90vh]">
+          <div className="w-[100%] relative h-[60vh] gap-10 md:w-[60%] md:h-[90vh] flex justify-center items-center">
+            {!videoLoaded && (
+              <ClipLoader color={"#9575CD"} loading={!videoLoaded} size={150} />
+            )}
             <Image
               src="/hero.gif"
               alt=""
               fill
-              className=" hidden dark:flex pt-8 rounded"
+              className={`hidden dark:flex pt-8 rounded ${
+                videoLoaded ? "block" : "hidden"
+              }`}
             />
-
             <div raised={true} className="dark:hidden">
-              {/* <CardActionArea className=" hover:bg-[#f4f3f4]"> */}
               <video
-                className="dark:hidden w-full h-[50vh] md:h-[90vh]"
+                className={`dark:hidden w-full h-[50vh] md:h-[90vh] ${
+                  videoLoaded ? "block" : "hidden"
+                }`}
                 width="320"
                 height="240"
                 muted
@@ -104,6 +105,7 @@ export default function FeaturedSection() {
                 preload="auto"
                 autoPlay={true}
                 loop={true}
+                onLoadedData={handleVideoLoaded}
               >
                 <source src="/vid2.mp4" type="video/mp4" />
                 <track
@@ -114,39 +116,30 @@ export default function FeaturedSection() {
                 />
                 Your browser does not support the video tag.
               </video>
-              {/* <CardMedia
-                component="video"
-                image={"/vid2.mp4"}
-                className="dark:hidden w-full h-[90vh]"
-                autoPlay
-                loop={true}
-              /> */}
-              {/* </CardActionArea> */}
             </div>
           </div>
         </div>
       </section>
       <section className="">
-        <div className=" text-center justify-center mt-10">
-          <h1 className=" font-extrabold text-4xl pt-24 pb-10 md:text-6xl">
+        <div className="text-center justify-center mt-10">
+          <h1 className="font-extrabold text-4xl pt-24 pb-10 md:text-6xl">
             What&apos;s Justskills about?
           </h1>
           <Element name="test1" className="element"></Element>
         </div>
       </section>
       <FirstFeature />
-      <section className=" pb-16">
-        <div className=" text-center justify-center mt-10">
-          <h1 className=" font-extrabold text-4xl pt-24 pb-10 md:text-6xl">
+      <section className="pb-16">
+        <div className="text-center justify-center mt-10">
+          <h1 className="font-extrabold text-4xl pt-24 pb-10 md:text-6xl">
             What&apos;s Justskills Study?
           </h1>
-
           <div className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl p-2">
             <div
               className="rounded-xl select-none justify-center bg-indigo-100 
-        dark:bg-indigo-500 border  w-full h-full flex flex-col md:flex-row"
+              dark:bg-indigo-500 border w-full h-full flex flex-col md:flex-row"
             >
-              <div className=" py-10 px-8 text-white ">
+              <div className="py-10 px-8 text-white">
                 <span className="rounded-full bg-white px-3 py-1 font-medium text-blue-600">
                   Justskills Study
                 </span>
@@ -160,11 +153,11 @@ export default function FeaturedSection() {
                 <p className="mb-8 text-indigo-500 dark:text-white">
                   For all avid readers, here&apos;s a carefully curated
                   collection of articles designed to enhance your skills in Data
-                  Structures and Algorithms (DSA).Additionally, foundational
+                  Structures and Algorithms (DSA). Additionally, foundational
                   concepts of programming languages are included to cater to
                   absolute beginners.
-                  <br />{" "}
-                  <span className=" font-sans font-bold ">
+                  <br />
+                  <span className="font-sans font-bold">
                     Read on trending topics in technology, coding, web
                     development, app development, interviews etc.
                   </span>
@@ -172,14 +165,14 @@ export default function FeaturedSection() {
                 <a
                   href="https://study.justskills.in/"
                   target="blank"
-                  className="font-semibold tracking-wide underline-offset-4 text-indigo-500 dark:text-white border-white border-2 p-2 rounded-lg hover:bg-indigo-400 "
+                  className="font-semibold tracking-wide underline-offset-4 text-indigo-500 dark:text-white border-white border-2 p-2 rounded-lg hover:bg-indigo-400"
                 >
                   Learn More
                 </a>
               </div>
               <div className="w-[100%]">
                 <img
-                  className="rounded-lg object-cover h-full "
+                  className="rounded-lg object-cover h-full"
                   src="/study.jpg"
                 />
               </div>
