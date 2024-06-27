@@ -83,7 +83,11 @@ export default function FeaturedSection() {
           </div>
           <div className="w-[100%] relative h-[60vh] gap-10 md:w-[60%] md:h-[90vh] flex justify-center items-center">
             {!videoLoaded && (
-              <ClipLoader color={"#9575CD"} loading={!videoLoaded} size={150} />
+              <ClipLoader
+                color={"#9575CDv"}
+                loading={!videoLoaded}
+                size={150}
+              />
             )}
             <Image
               src="/hero.gif"

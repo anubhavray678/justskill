@@ -96,7 +96,6 @@ export default function MenuBar() {
           </Link>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
 
-          {/* <ListItemButton>Read</ListItemButton> */}
           <ListItemButton>
             <AccordionGroup>
               <Accordion sx={{ fontSize: "xl" }}>
@@ -138,37 +137,6 @@ export default function MenuBar() {
           </ListItemButton>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
 
-          <ListItemButton>
-            <AccordionGroup>
-              <Accordion sx={{ fontSize: "xl" }}>
-                <AccordionSummary sx={{ fontWeight: 400 }}>
-                  Practice
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Button onClick={() => setOpen(false)}>
-                    <Link
-                      href="/dsa-questions"
-                      className="capitalize text-slate-800 hover:text-purple-500"
-                    >
-                      DSA Sheet
-                    </Link>
-                  </Button>
-                </AccordionDetails>
-                <AccordionDetails>
-                  <Button onClick={() => setOpen(false)}>
-                    <Link
-                      href="/codeground"
-                      className="capitalize text-slate-800 hover:text-purple-500"
-                    >
-                      CodeGround
-                    </Link>
-                  </Button>
-                </AccordionDetails>
-              </Accordion>
-            </AccordionGroup>
-          </ListItemButton>
-          <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
-
           <Link href={"/contact"}>
             <ListItemButton
               sx={{ ml: 1.3, fontWeight: 400 }}
@@ -189,25 +157,6 @@ export default function MenuBar() {
           </Link>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
         </List>
-        {/* <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <ListItemButton
-            sx={{
-              color: "#000",
-              backgroundColor: "rgba(191, 193, 193, 0.121)",
-              justifyContent: "center",
-              width: "70%",
-              borderRadius: 5,
-              height: "50px",
-            }}
-          >
-            Sign In
-          </ListItemButton>
-        </Box> */}
       </Drawer>
     </React.Fragment>
   );

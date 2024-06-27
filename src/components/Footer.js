@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import WhatsappIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 import logo from "../assets/logo/logo.png";
 import DialogBox from "./reusables/DialogBox";
@@ -29,13 +29,13 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <Link href="/codeground" className="hover:underline">
-                    CodeGround
+                  <Link href="/about" className="hover:underline">
+                    About
                   </Link>
                 </li>
                 <li>
-                  <Link href="joblist" className="hover:underline">
-                    JobList
+                  <Link href="jobsearches" className="hover:underline">
+                    JobSearch
                   </Link>
                 </li>
               </ul>
@@ -87,18 +87,10 @@ export default function Footer() {
               <span className="sr-only">Telegram community</span>
             </a>
             <a
-              href="#"
+              href="https://www.whatsapp.com/channel/0029Vaig2vY2ER6kBlzAIc0g"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
-              <TwitterIcon />
-              <span className="sr-only">Twitter page</span>
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-            >
-              <EmailIcon />
-              <span className="sr-only">Support</span>
+              <WhatsappIcon />
             </a>
           </div>
         </div>
