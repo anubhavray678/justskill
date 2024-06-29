@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import WhatsappIcon from "@mui/icons-material/WhatsApp";
-import EmailIcon from "@mui/icons-material/Email";
 import logo from "../assets/logo/logo.png";
 import DialogBox from "./reusables/DialogBox";
 import PrivacyPolicy from "./PrivacyPolicy";
