@@ -35,7 +35,7 @@ export default function Header() {
               <Link href={"/contact"} className="hover:text-purple-500">
                 Contact
               </Link>
-              <PracticeDropDown />
+              {/* <PracticeDropDown /> */}
               <Link
                 href={"https://study.justskills.in/"}
                 className="font-bold hover:text-purple-500"

@@ -138,7 +138,7 @@ export default function FeaturedSection() {
           <h1 className="font-extrabold text-4xl pt-24 pb-10 md:text-6xl">
             What&apos;s Justskills Study?
           </h1>
-          <div className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl p-2">
+          <div className="bg-gradient-to-r  rounded-xl p-2">
             <div
               className="rounded-xl select-none justify-center bg-indigo-100 
               dark:bg-indigo-500 border w-full h-full flex flex-col md:flex-row"

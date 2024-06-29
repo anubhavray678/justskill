@@ -1,5 +1,12 @@
 import FeaturedSection from "@/components/Featured/FeaturedSection";
+import { Benefits } from "@/components/new/Benefits";
+import { Faq } from "@/components/new/Faq";
+import { SectionTitle } from "@/components/new/SectionTitle";
+import { Testimonials } from "@/components/new/Testimonials";
 import Head from "next/head";
+
+import { benefitOne, benefitTwo } from "@/components/new/data";
+import Course from "@/components/new/Course";
 export const metadata = {
   title: "JustSkills | Improve then prove.",
   description:
@@ -46,6 +53,32 @@ export default function Home() {
       </Head>
       <main>
         <FeaturedSection />
+        <Course />
+        <Benefits data={benefitOne} />
+
+        <SectionTitle
+          preTitle="Testimonials"
+          title="Here's what our customers said"
+        >
+          Testimonials is a great way to increase the brand trust and awareness.
+          Use this section to highlight your popular customers.
+        </SectionTitle>
+
+        <Testimonials />
+
+        <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
+          Answer your customers possible questions here, it will increase the
+          conversion rate as well as support or chat requests.
+        </SectionTitle>
+        <Faq />
+        <section>
+          <h1 className="text-center text-2xl font-bold font-sans">
+            AWESOME COMMUNITY
+          </h1>
+          <p className="text-center text-xl font-semibold font-sans text-indigo-600">
+            Trusted by over 2000+ Students
+          </p>
+        </section>
       </main>
     </>
   );
