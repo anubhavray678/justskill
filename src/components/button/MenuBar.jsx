@@ -26,12 +26,27 @@ export default function MenuBar() {
       <IconButton
         variant=""
         color="neutral"
-        onClick={() => setOpen(true)}
+        onClick={() => setOpen(!open)}
         size="lg"
       >
-        <MenuRounded />
+        {open ? (
+          <ModalClose
+            onClick={() => setOpen(false)}
+            style={{
+              backgroundColor: "#f2f2f2",
+              borderRadius: "50%",
+            }}
+          />
+        ) : (
+          <MenuRounded />
+        )}
       </IconButton>
-      <Drawer open={open} onClose={() => setOpen(false)} size="lg" color="">
+      <Drawer
+        open={open}
+        onClose={() => setOpen(false)}
+        size="lg"
+        style={{ marginTop: "100px" }}
+      >
         <Box
           sx={{
             display: "flex",
