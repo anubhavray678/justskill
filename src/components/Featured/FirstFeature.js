@@ -3,7 +3,7 @@ import React from "react";
 
 function FirstFeature() {
   return (
-    <div className=" flex md:flex mt-20 flex-wrap lg:flex-nowrap justify-between">
+    <div className=" flex md:flex flex-wrap lg:flex-nowrap justify-between">
       <section className=" pb-16 w-full">
         <div className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
           <div className={`flex items-center justify-center w-full lg:w-1/2 `}>

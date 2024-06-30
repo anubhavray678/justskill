@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="border-t dark:bg-secondary ">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+          {/* <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center gap-2">
               <Image src={logo} alt="" className="Applogo" />
               <span className="font-extrabold text-purple-500 text-2xl font-serif whitespace-nowrap">
@@ -20,7 +20,7 @@ export default function Footer() {
                 <span className="text-yellow-500 font-extrabold">Skills</span>
               </span>
             </a>
-          </div>
+          </div> */}
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase ">
@@ -44,15 +44,12 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold uppercase ">Legal</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  {/* <a href="#" className="hover:underline"> */}
-                  {/* Privacy Policy */}
                   <DialogBox
                     dialogType={"body"}
                     buttonName={"Privacy Policy"}
                     title={"Privacy Policy"}
                     content={<PrivacyPolicy />}
                   />
-                  {/* </a> */}
                 </li>
                 <li>
                   <a href="#" className="hover:underline">

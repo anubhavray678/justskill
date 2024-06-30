@@ -10,7 +10,7 @@ import { ToggleButton } from "./button/ToggleButton";
 
 export default function Header() {
   return (
-    <header className="border-b py-3">
+    <header className="border-b py-3 fixed w-full z-[9999] dark:bg-black bg-white">
       <div className="max-w-6xl flex justify-between mx-auto px-6 ">
         <div className="flex items-center gap-10">
           <Link href="/" className="flex items-center gap-2">

@@ -12,8 +12,8 @@ export const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal text-gray-600 dark:text-gray-400">
-              The instructors are <Mark>top-notch</Mark> and the hands-on
-              approach to learning is incredibly effective.
+              The instructors are top-notch and the hands-on approach to{" "}
+              <Mark>learning</Mark> is incredibly effective.
             </p>
 
             <Avatar
@@ -26,7 +26,7 @@ export const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal text-gray-600 dark:text-gray-400">
-              I went from knowing nothing about <Mark>web development</Mark> to
+              I went from knowing nothing about <Mark>web</Mark> development to
               landing my dream job as a frontend developer.
             </p>
 
@@ -40,7 +40,7 @@ export const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 text-gray-600 dark:text-gray-400 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              The courses are <Mark>structured well</Mark>, and the projects
+              The courses are structured well, and the <Mark>projects</Mark>
               helped me build a strong portfolio.
             </p>
 

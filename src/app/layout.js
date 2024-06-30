@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
               >
                 <Header />
 
-                <div className="max-w-7xl mx-auto p-6 min-h-screen">
+                <div className="max-w-7xl mx-auto p-6 min-h-screen pt-[100px]">
                   {children}
                 </div>
                 <Footer />
