@@ -49,15 +49,11 @@ export default function Header() {
 
         <div className="visible lg:invisible flex ">
           <div className="mt-.5">
-            <ToggleButton />
             <MenuBar />
           </div>
         </div>
         <div className="hidden lg:block">
           <nav className="flex items-center gap-4 text-lg text-slate-500"></nav>
-        </div>
-        <div className="hidden lg:flex mt-1">
-          <ToggleButton />
         </div>
       </div>
     </header>
