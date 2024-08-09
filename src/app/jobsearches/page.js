@@ -88,7 +88,11 @@ export default function JobList() {
         <div className="hidden lg:flex">
           <Sidebar handleChange={handleChange} />
         </div>
-        <Navigation query={query} handleInputChange={handleInputChange} />
+        <Navigation
+          query={query}
+          handleInputChange={handleInputChange}
+          placeholder={"Search your job here...."}
+        />
         {/* <Recommended handleClick={handleClick} /> */}
         <Products result={result} />
       </div>

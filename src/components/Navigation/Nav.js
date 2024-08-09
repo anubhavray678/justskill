@@ -2,7 +2,7 @@ import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
 
-const Nav = ({ handleInputChange, query, handleChange }) => {
+const Nav = ({ handleInputChange, query, handleChange, placeholder }) => {
   return (
     <div className="nav">
       <input
@@ -10,7 +10,7 @@ const Nav = ({ handleInputChange, query, handleChange }) => {
         type="text"
         onChange={handleInputChange}
         value={query}
-        placeholder="Search your job here...."
+        placeholder={placeholder}
       />
     </div>
   );

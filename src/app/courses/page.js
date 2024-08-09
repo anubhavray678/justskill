@@ -1,50 +1,81 @@
-// // pages/index.js
 "use client";
-// pages/index.js
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { getEducationalChannels } from "@/lib/youtube";
+import { useState } from "react";
+import Navigation from "@/components/Navigation/Nav";
+import Products from "@/components/Products/Products";
+import courses from "@/components/db/courseData";
+import Sidebar from "@/components/CourseSidebar/Sidebar";
+import Card from "@/components/filter/Card";
+import AccordSidebar from "@/components/CourseSidebar/AccordSidebar";
 
-const HomePage = () => {
-  const [channels, setChannels] = useState([]);
+export default function Course() {
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
-  useEffect(() => {
-    const fetchChannels = async () => {
-      const channels = await getEducationalChannels();
-      setChannels(channels);
-    };
-    fetchChannels();
-  }, []);
+  // ----------- Input Filter -----------
+  const [query, setQuery] = useState("");
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
+
+  const filteredItems = courses.filter(
+    (product) =>
+      product.CourseTitle.toLowerCase().indexOf(query.toLowerCase()) !== -1
+  );
+
+  // ----------- Radio Filtering -----------
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  // ------------ Button Filtering -----------
+  const handleClick = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  function filteredData(courses, selected, query) {
+    let filteredProducts = courses;
+
+    // Filtering Input Items
+    if (query) {
+      filteredProducts = filteredItems;
+    }
+
+    // Applying selected filter
+    if (selected) {
+      filteredProducts = filteredProducts.filter(
+        ({ CourseTitle }) => CourseTitle === selected
+      );
+    }
+
+    return filteredProducts.map(({ Img, CourseTitle, jobLink }) => (
+      <Card
+        key={Math.random()}
+        img={Img}
+        title={CourseTitle}
+        jobLink={jobLink}
+        show={false}
+      />
+    ));
+  }
+
+  const result = filteredData(courses, selectedCategory, query);
 
   return (
-    <div>
-      <h1>Educational Channels</h1>
-      <div className="channel-list">
-        {channels.map((channel) => (
-          <div key={channel.id.channelId} className="channel-item">
-            <h2>{channel.snippet.title}</h2>
-            <Link href={`/channel/${channel.id.channelId}`}>
-              <a>View Videos</a>
-            </Link>
-          </div>
-        ))}
-      </div>
-      <style jsx>{`
-        .channel-list {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 16px;
-        }
-        .channel-item {
-          width: calc(33% - 16px);
-          box-sizing: border-box;
-        }
-        h2 {
-          font-size: 1.2em;
-        }
-      `}</style>
-    </div>
-  );
-};
+    <>
+      <AccordSidebar handleChange={handleChange} />
 
-export default HomePage;
+      <div>
+        <div className="hidden lg:flex">
+          <Sidebar handleChange={handleChange} />
+        </div>
+        <Navigation
+          query={query}
+          handleInputChange={handleInputChange}
+          placeholder={"Search your Course here ...."}
+        />
+        {/* <Recommended handleClick={handleClick} /> */}
+        <Products result={result} />
+      </div>
+    </>
+  );
+}

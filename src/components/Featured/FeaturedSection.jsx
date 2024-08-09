@@ -50,20 +50,17 @@ export default function FeaturedSection() {
         <div className="w-full justify-items-center md:flex justify-center md:justify-between">
           <div className="w-[100%] md:w-[30%] relative z-50 justify-evenly flex flex-col">
             <div>
-              <h1 className="font-extrabold text-6xl sm:text-8xl text-primary">
+              <h1 className="font-extrabold text-6xl sm:text-8xl text-primar text-purple-400">
                 Creative,
               </h1>
-              <h1 className="font-extrabold text-6xl sm:text-8xl text-primary">
+              <h1 className="font-extrabold text-6xl sm:text-8xl text-primar text-purple-500">
                 Thoughts,
               </h1>
-              <h1 className="font-extrabold text-6xl sm:text-8xl text-primary">
+              <h1 className="font-extrabold text-6xl sm:text-8xl text-primar text-purple-600">
                 Age,
               </h1>
             </div>
             <div className="">
-              <p className="font-bold text-2xl sm:text-4xl text-primary pt-10">
-                Improve then prove
-              </p>
               <div className="">
                 <Link
                   to="createAccount"
