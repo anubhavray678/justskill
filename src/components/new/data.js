@@ -11,24 +11,29 @@ import benefitOneImg from "../../../public/img/benefit-one.png";
 import benefitTwoImg from "../../../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Course highlight and benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Course Details and benefits",
+  desc: "A comprehensive guide to mastering C++ programming, this program offers a detailed course focusing on the intricate analysis of data structures, provides a thorough analysis of algorithms, and delivers a well-structured course on SQL.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point briefly in one or two lines.",
+      title: "C++ Fundamentals",
+      desc: "Very comprehensive explanation of of c++ programming.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Data Structure",
+      desc: "Great source to study detailed analysis of data structures",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Algorithms",
+      desc: "Analysis of algorithms",
       icon: <CursorArrowRaysIcon />,
+    },
+    {
+      title: "SQL",
+      desc: "This is well structured course on sql .",
+      icon: <AdjustmentsHorizontalIcon />,
     },
   ],
 };

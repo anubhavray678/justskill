@@ -111,45 +111,15 @@ export default function MenuBar() {
           </Link>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
 
-          <ListItemButton>
-            <AccordionGroup>
-              <Accordion sx={{ fontSize: "xl" }}>
-                <AccordionSummary sx={{ fontWeight: 400 }}>
-                  Read
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Button onClick={() => setOpen(false)}>
-                    <Link
-                      href="/cpp-fundamentals"
-                      className="capitalize text-slate-800 hover:text-purple-500"
-                    >
-                      C++ Fundamentals
-                    </Link>
-                  </Button>
-                </AccordionDetails>
-                <AccordionDetails>
-                  <Button onClick={() => setOpen(false)}>
-                    <Link
-                      href="/cpp-fundamentals"
-                      className="capitalize text-slate-800 hover:text-purple-500"
-                    >
-                      Data Structures
-                    </Link>
-                  </Button>
-                </AccordionDetails>
-                <AccordionDetails>
-                  <Button onClick={() => setOpen(false)}>
-                    <Link
-                      href="/cpp-fundamentals"
-                      className="capitalize text-slate-800 hover:text-purple-500"
-                    >
-                      Algorithms
-                    </Link>
-                  </Button>
-                </AccordionDetails>
-              </Accordion>
-            </AccordionGroup>
-          </ListItemButton>
+          <Link href={"/read"}>
+            <ListItemButton
+              sx={{ ml: 1.3, fontWeight: 400 }}
+              onClick={() => setOpen(false)}
+            >
+              Read
+            </ListItemButton>
+          </Link>
+
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
 
           <Link href={"/contact"}>
