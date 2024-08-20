@@ -9,13 +9,14 @@ import { ToggleButton } from "./button/ToggleButton";
 
 export default function Header() {
   return (
-    <header className="border-b py-3 fixed w-full z-[9999] dark:bg-black bg-white">
+    <header className="border-b py-3 fixed w-full z-[999] dark:bg-black bg-white">
       <div className="max-w-6xl flex justify-between mx-auto px-6 ">
         <div className="flex items-center gap-10 justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image src={logo} alt="" className="Applogo" />
             <span className="font-extrabold text-purple-500 text-2xl font-serif">
-              Just<span className="text-yellow-500 font-extrabold">Skills</span>
+              Just
+              <span className="text-yellow-500 font-extrabold">Skills</span>
             </span>
           </Link>
 
@@ -38,7 +39,6 @@ export default function Header() {
               <Link href={"/contact"} className="hover:text-purple-500">
                 Contact
               </Link>
-              {/* <PracticeDropDown /> */}
             </nav>
           </div>
         </div>

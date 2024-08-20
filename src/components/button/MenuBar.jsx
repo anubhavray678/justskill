@@ -47,7 +47,7 @@ export default function MenuBar() {
         size="lg"
         style={{ marginTop: "100px" }}
       >
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             alignItems: "center",
@@ -66,17 +66,9 @@ export default function MenuBar() {
             </span>
           </Link>
 
-          <ModalClose
-            id="close-icon"
-            sx={{
-              position: "initial",
-              backgroundColor: "#8C52FF",
-              color: "#FFFFFF",
-              borderRadius: 999,
-            }}
-          />
-        </Box>
-        <Divider sx={{ marginTop: 1 }} />
+          
+        </Box> */}
+        {/* <Divider sx={{ marginTop: 1 }} /> */}
 
         <List
           size="lg"
@@ -87,8 +79,25 @@ export default function MenuBar() {
             "& > div": { justifyContent: "start" },
           }}
         >
-          <ListItemButton sx={{ fontWeight: 400, ml: 1.3 }}>
+          <ListItemButton
+            sx={{
+              fontWeight: 400,
+              ml: 1.3,
+            }}
+          >
             <a href="/">Home </a>
+            <ModalClose
+              id="close-icon"
+              sx={{
+                position: "initial",
+                backgroundColor: "#f2f2f2",
+                color: "#FFFFFF",
+                borderRadius: 999,
+                position: "absolute",
+                top: 0,
+                right: 5,
+              }}
+            />
           </ListItemButton>
           <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
 

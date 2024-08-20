@@ -21,21 +21,35 @@ export default function Footer() {
               </span>
             </a>
           </div> */}
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="flex justify-around justify-items-center gap-8 sm:gap-6 sm:grid-cols-2 w-full">
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase ">
                 Resources
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <Link href="/about" className="hover:underline">
-                    About
-                  </Link>
+                <li class="mb-4">
+                  <a
+                    href="https://justskills.in/course"
+                    class="hover:underline"
+                  >
+                    Course
+                  </a>
                 </li>
-                <li>
-                  <Link href="jobsearches" className="hover:underline">
+                <li class="mb-4">
+                  <a
+                    href="https://justskills.in/jobsearch"
+                    class="hover:underline"
+                  >
                     JobSearch
-                  </Link>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://compresify.justskills.in"
+                    class="hover:underline"
+                  >
+                    Compresify
+                  </a>
                 </li>
               </ul>
             </div>
@@ -59,6 +73,80 @@ export default function Footer() {
                       title={"Terms of Service"}
                       content={<TermsAndCons />}
                     />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold uppercase ">Company</h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://justskills.in/about"
+                    class=" hover:underline"
+                  >
+                    About
+                  </a>
+                </li>
+                <li class="mb-4"></li>
+                <li class="mb-4">
+                  <a
+                    href="https://justskills.in/contact"
+                    class="hover:underline"
+                  >
+                    Contact
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://justskills.in/read" class="hover:underline">
+                    Read
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold uppercase ">
+                Category
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://study.justskills.in/read?cat=android"
+                    class="hover:underline"
+                  >
+                    Android
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://study.justskills.in/read?cat=emerging-tech"
+                    class="hover:underline"
+                  >
+                    Emerging-tech
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://study.justskills.in/read?cat=coding"
+                    class="hover:underline"
+                  >
+                    Coding
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://study.justskills.in/read?cat=project"
+                    class="hover:underline"
+                  >
+                    Project
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://study.justskills.in/read?cat=placement"
+                    class="hover:underline"
+                  >
+                    Placement
                   </a>
                 </li>
               </ul>
