@@ -73,6 +73,7 @@ export default function JobList() {
           company={company}
           type={type}
           jobLink={jobLink}
+          show={true}
         />
       )
     );
