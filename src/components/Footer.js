@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
             </a>
           </div> */}
-          <div className="grid sm:flex justify-around justify-items-center gap-8 sm:gap-6 sm:grid-cols-2 w-full text-center grid-cols-2">
+          <div className="grid sm:flex justify-around justify-items-center gap-8 sm:gap-6 sm:grid-cols-2 w-full text-center">
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase ">
                 Resources
