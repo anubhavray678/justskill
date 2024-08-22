@@ -26,7 +26,7 @@ export const metadata = {
       "JustSkills is one of the leading platforms to learn Computer Science skills. Master essential data structures and algorithms,read trending tech and expand your knowledge on different tech stuff.",
     url: "https://justskills.in/",
     metadataBase: new URL("https://justskills.in/"),
-    images: "/logo.png",
+    images: "/study.jpg",
   },
 };
 export default function Home() {
